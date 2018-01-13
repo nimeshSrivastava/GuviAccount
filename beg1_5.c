@@ -2,17 +2,21 @@
 
 int main()
 {
-    int num1,num2,num3;
-    scanf("%d %d %d",&num1,&num2,&num3);
-    if( num1>=num2 && num1>=num3 )
-        printf("%d is the largest number.", num1);
+    int y;
+    scanf("%d",&y);
 
-    if( num2>=num1 && num2>=num3 )
-        printf("%d is the largest number.", num2);
-
-    if( num3>=num1 && num3>=num2 )
-        printf("%d is the largest number.", num3);
+    if(y%4==0){
+        if(y%100==0){
+           if(y%400==0)
+                printf("yes");
+            else
+                printf("no");
+        }
+        else
+            printf("yes");
+    }
+    else
+        printf("no");
     
-
     return 0;
 }

@@ -2,10 +2,11 @@
 
 int main()
 {
-    int n;
+    int i,n,sum=0;
     scanf("%d",&n);
-    for(int i=0;i<n;i++)
-    printf("Hello\n");
-    
+    for(i=0;i<n;i++)
+    sum=sum+i;
+    printf("%d",sum);
+
     return 0;
 }
